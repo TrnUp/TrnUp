@@ -204,12 +204,14 @@
                 </div>
                 <div class="form-center">
                     <form method="POST" action="https://script.google.com/macros/s/AKfycbzSuX33n2VeieD9ijaYHY7x4dUexlAegiA3oRoRAuovjooHdd6GS-mZRYksU8KEFbKuRQ/exec">
-                        <label> Your Name:         <input name="Name" type="text" placeholder="Name*" required> </label>
-                        <br />
-                        <label> Your Email:        <input name="Email" type="email" placeholder="Email*" required> </label>
-                        <br />
-                        <label> Future Event Date: <input name="Future_Date" type="date" placeholder="MM-DD-YYYY" required> </label>
-                        <br />
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input name="Email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder ="Email*">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                        <input name="Name" type="text" placeholder="Name*" required>
+                        <!--<input name="Email" type="email" placeholder="Email*" required>-->
+                        <input name="Future_Date" type="date" placeholder="MM-DD-YYYY" required>
                         <button type="submit">Submit</button>
                     </form>
                 </div>
